@@ -18,7 +18,9 @@ int ret_det(int * a , int s , int y){
         }
         }
     if(s == 3){
-        return (arr_in[0]*arr_in[3] - arr_in[1]*arr_in[2]);
+        int re_var = arr_in[0]*arr_in[3] - arr_in[1]*arr_in[2];
+        delete arr_in ; 
+        return re_var ;
     }
     else
         return main_loop(arr_in , s-1);
